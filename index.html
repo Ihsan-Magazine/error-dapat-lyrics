@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="https://kit.fontawesome.com/1cb0b252aa.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <title>DapatLirik</title>
+</head>
+
+<header>
+
+    <nav id="appBar" class="app-bar">
+        <ul class="topnav">
+            <li><a href="#"><i class="fas fa-music"></i>Dapat<strong>Lirik</strong></a></li>
+            <li><a href="https://www.instagram.com/ihsandroid/">About Us</a></li>
+            <li><a href="#find-lyrics">Find Lyrics</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myMenu()">☰</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+    <main>  
+        
+        <!-- Search Lagu -->
+        <section>
+        <h3 class="heading" id="find-lyrics" ><span><i class="fab fa-mixcloud fa-2x"></i></span> Lirik Favorit Anda Disini!</h3>
+        <p class="subtitle">Temukan Lirik Lagu favorit anda dengan satu klik saja!</p>
+
+            <div class="container search-container" id="search-container">
+                <form id="track.search">
+                    <input class="search" type="search" placeholder="Ketik Judul Lagu/Lirik" id="searchElement" required>	
+                    <input class="button" type="button" id="searchButtonElement" value="Cari">		
+                </form>
+            </div>
+
+        </section>
+
+        
+
+
+        <!-- Top 8 Tracks -->
+        <section>
+        <h3 class="heading"><span><i class="fas fa-microphone-alt fa-2x"></i></span>Top 8 Lirik Terfavorit</h3>
+        <p class="subtitle">8 Lirik Lagu Terfavorit Akhir-Akhir Ini</p>
+
+        <div id="songList"></div>
+
+        </section>
+
+        <!-- Card -->
+        <div class="cards-list" id="songList">
+  
+            <div class="card 1" id="artist.albums.get">
+              <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+              <div class="card_title title-white">
+                <p>Card Title</p>
+              </div>
+            </div>
+            
+              <div class="card 2">
+              <div class="card_image" id="artist.albums.get">
+                <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+                </div>
+              <div class="card_title title-white">
+                <p>Card Title</p>
+              </div>
+            </div>
+            
+            <div class="card 3">
+              <div class="card_image" id="artist.albums.get">
+                <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+              </div>
+              <div class="card_title">
+                <p>Card Title</p>
+              </div>
+            </div>
+              
+            <div class="card 4">
+              <div class="card_image" id="artist.albums.get">
+                <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+                </div>
+              <div class="card_title title-black">
+                <p>Card Title</p>
+              </div>
+            </div>
+
+            <div class="card 5">
+                <div class="card_image" id="artist.albums.get"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                <div class="card_title title-white">
+                  <p>Card Title</p>
+                </div>
+              </div>
+              
+                <div class="card 6">
+                <div class="card_image" id="artist.albums.get">
+                  <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+                  </div>
+                <div class="card_title title-white">
+                  <p>Card Title</p>
+                </div>
+              </div>
+              
+              <div class="card 7">
+                <div class="card_image" id="artist.albums.get">
+                  <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+                </div>
+                <div class="card_title">
+                  <p>Card Title</p>
+                </div>
+              </div>
+                
+            <div class="card 8">
+                <div class="card_image" id="artist.albums.get">
+                  <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+                  </div>
+                <div class="card_title title-black">
+                  <p>Card Title</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+<!-- Javascript Disini -->
+<script>
+    const myMenu = () => {
+        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    }
+</script>
+
+<script src="src/script/data/songs.js"></script>
+<script src="src/script/data/data-source.js"></script>
+<script src="src/script/view/main.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+<footer>
+    <h3><i class="fas fa-music"></i>Dapat<strong>Lirik</strong> 2020 - By <span><i class="fab fa-instagram"></i></span>Ihsandroid </h3>
+</footer>
+
+</html>

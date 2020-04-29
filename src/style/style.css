@@ -1,0 +1,262 @@
+
+
+/* Dasar */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --warna-hitam:#333333;
+    --warna-ungu:  #2c072c;
+    --warna-pink: #ff536e;
+    --warna-putih: #FFFAF0;
+    --gradasi: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    --bayangan: rgba(0, 0, 0, 0.2);
+}
+
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h4,h5,h6,p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    padding: 4rem 1.5rem;
+    display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.container {
+    text-align: center;
+    margin: 0;
+}
+
+/* ----------------------------------- */
+
+
+/*Form Pencarian*/
+
+form {
+    width:1200px;
+    margin:50px auto;
+}
+.search {
+    padding:20px 30px;
+    border-radius: 15px;
+    background:rgba(197, 190, 190, 0.2);
+    border:0px solid #dbdbdb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.button {
+    position:relative;
+    padding:18px 24px;
+    border-radius: 12px;
+    margin-left: 10px;
+    left:-8px;
+    background-color:#FF8C00;
+    color:#fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#FF8C00;
+}
+
+/* ----------------------------------- */
+
+/* Card */
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+  
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+  
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+  
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+  
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+  
+.title-white {
+    color: white;
+}
+  
+.title-black {
+    color: black;
+}
+  
+@media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+}
+
+/* ----------------------------------- */
+
+/* Menu Navigasi */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: var(--warna-ungu);
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+/* ----------------------------------- */
+
+/* Text Heading */
+
+.heading {
+    margin: 20px;
+    font-size: 2rem ;
+    color: var(--warna-pink);
+}
+
+.subtitle {
+    margin: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3f4957;
+}
+
+/* ----------------------------------- */
+
+
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* ----------------------------------- */
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 30px 30px;
+    background-color: var(---warna-putih);
+    color: #3f4957;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* ----------------------------------- */
+
+/* RENSPONSIVE */
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka menu yaitu (li.icon) */
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+    }
+  }
+  
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+  */
+
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+ul.topnav.responsive li {
+      float: none;
+      display: inline;
+    }
+
+ul.topnav.responsive li a {
+      display: block;
+      text-align: left;
+    }
+}
+
